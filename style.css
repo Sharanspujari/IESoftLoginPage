@@ -1,14 +1,169 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font: normal normal normal 18px/26px SVN-New Athletic M54;;
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Quicksand");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: normal normal normal 18px/26px SVN-New Athletic M54;
 }
-body{
-    display: flex;
-    align-items: center;
-    justify-content:  center;
-    background: url("icons/Background.png") no-repeat ;
-    background-size: cover;
-   
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("icons/Background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#form-container {
+  width: 65%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#logo-container {
+  width: 850px;
+  height: 100vh;
+  position: relative;
+}
+#logo-container img {
+  width: 530px;
+  height: 530px;
+  top: 120px;
+  left: 80px;
+}
+
+#logo-container div {
+  width: 600px;
+  height: 127px;
+  background: transparent linear-gradient(102deg, #ffffff4d 0%, #ffffff66 100%)
+    0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 3px 9px #00000059, 0px 5px 18px #000000;
+  border: 1px solid #90caca;
+  border-radius: 22px;
+  opacity: 0.8;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+}
+.form-box {
+  width: 600px;
+  height: auto;
+  background: transparent linear-gradient(135deg, #ffffff4d 0%, #ffffff66 100%)
+    0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 3px 9px #00000059, 0px 5px 18px #000000;
+  border: 1px solid #90caca;
+  border-radius: 30px;
+  opacity: 0.8;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  position: relative;
+}
+
+img {
+  position: absolute;
+  top: -50px;
+  left: 165px;
+  width: 256px;
+  height: 160px;
+  opacity: 1;
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-container {
+  height: 60px;
+  margin: 130px auto;
+  width: 90%;
+  border: 1px solid #90caca;
+  border-radius: 38px;
+  opacity: 1;
+  display: flex;
+  position: relative;
+}
+
+.btn-container button {
+  width: 50%;
+  float: left;
+  height: auto;
+  color: #56cbcb;
+  background: transparent;
+  letter-spacing: 0;
+  font: normal normal normal 30px/43px SVN-New Athletic M54;
+  font-weight: bold;
+  border: none;
+  opacity: 1;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  position: relative;
+}
+#login-btn {
+  background: transparent linear-gradient(105deg, #56cccc 0%, #66b2c9 100%) 0%;
+  color: #000000;
+  border-radius: 30px;
+  opacity: 1;
+}
+
+.form-box form {
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin: 30px;
+}
+
+#login-form,
+#register-form {
+  height: auto;
+  position: relative;
+  width: 100%;
+  transition: 0.5s;
+}
+#register-form {
+  display: none;
+}
+.register-form {
+  top: 120px;
+  width: 280px;
+  transition: 0.5s;
+}
+
+.input-field {
+  width: 100%;
+  padding: 15px 0;
+  margin: 10px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid #848484;
+  outline: none;
+  background: transparent;
+}
+.input-field::placeholder {
+  color: #9c9b9b;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.form-box .submit-btn {
+  width: 100%;
+  height: 55px;
+  font-weight: bold;
+  font-size: 1.2em;
+  background: transparent linear-gradient(97deg, #56cccc 0%, #66b2c9 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 30px;
+  border: none;
+  opacity: 1;
+  margin-top: 1.5em;
+  cursor: pointer;
+  margin-bottom: 0.9em;
 }

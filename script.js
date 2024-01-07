@@ -1,28 +1,25 @@
+let loginbtn = document.getElementById("login-btn");
+let registerbtn = document.getElementById("register-btn");
+let registerForm = document.getElementById("register-form");
+let loginForm = document.getElementById("login-form");
+
 function loginFun() {
-  document.getElementById("register-btn").style.background = "none";
-  let registerbtn = document.getElementById("register-btn");
-  if (registerbtn) {
-    document.getElementById("login-btn").style.background =
-      "transparent linear-gradient(105deg, #56CCCC 0%, #66B2C9 100%) 0% 0% no-repeat padding-box";
-    document.getElementById("login-btn").style.color = "#000000";
-    document.getElementById("register-btn").style.color = "#56cbcb";
-    document.getElementById("register-form").style.display = "none";
-    document.getElementById("login-form").style.display = "block";
-  }
+  registerbtn.style.background = "none";
+  registerbtn.style.color = "rgb(6, 255, 255";
+  registerForm.style.display = "none";
+  loginbtn.style.background = "rgb(6, 255, 255";
+  loginbtn.style.color = "#000000";
+  loginForm.style.display = "block";
 }
 
 function registerFun() {
-  document.getElementById("login-btn").style.background = "none";
-  let loginbtn = document.getElementById("login-btn");
-  if (loginbtn) {
-    document.getElementById("register-btn").style.color = "#000000";
-    document.getElementById("register-btn").style.background =
-      "transparent linear-gradient(105deg, #56cccc 0%, #66b2c9 100%) 0%";
-    document.getElementById("register-btn").style.borderRadius = "30px";
-    document.getElementById("login-btn").style.color = "#56cbcb";
-    document.getElementById("login-form").style.display = "none";
-    document.getElementById("register-form").style.display = "block";
-  }
+  loginbtn.style.background = "none";
+  registerbtn.style.color = "#000000";
+  registerbtn.style.background = "rgb(6, 255, 255";
+  registerbtn.style.borderRadius = "30px";
+  loginbtn.style.color = "rgb(6, 255, 255";
+  loginForm.style.display = "none";
+  registerForm.style.display = "block";
 }
 
 let textData = document.getElementById("text");

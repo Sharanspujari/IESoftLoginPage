@@ -24,3 +24,7 @@ function registerFun() {
     document.getElementById("register-form").style.display = "block";
   }
 }
+
+let textData = document.getElementById("text");
+let uppercase = textData.innerText.toUpperCase();
+textData.innerText = uppercase;
